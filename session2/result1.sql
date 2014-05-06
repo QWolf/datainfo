@@ -1,0 +1,10 @@
+INSERT INTO Problem1 (task, result, motivation) VALUES ('a', False, 'Er kunnen best meerdere voertuigen met dezelfde capiciteit zijn.');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('b', True, 'Een voertuig heeft een vaste capiciteit');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('c', False, 'Een klant kan twee pakjes voor op hetzelfde adres bestellen, dit kan dan op hetzelfde moment gefactureerd worden.');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('d', True, 'Een pakje heeft maar een factuur(c), en er is natuurlijk maar een afleveradres per pakje(7)');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('e', True, 'Een pakje heeft een factuur, en elk pakje heeft slecht een factuur, dus er is maar een geldbedrag voor. Verder is elke factuur voor slechts een ontvanger(1)');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('f', True, 'Een bestuurder heeft op een tijdstip t slechts een voertuig onder zijn hoede.');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('g', True, 'Een voertuig heeft altijd slechts een bestuurder, dus de combinatie van voertuig en capiciteit heeft er ook maar 1.');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('h', False, 'Er kunnen meerdere bestuurders vastzitten aan een auto, maar dit is geen vaste set.');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('i', True, 'Vanuit het voertuig kunnen alle mogelijke capiciteiten voor dat voertuig berekend worden(namelijk 1 mogelijkheid)');
+INSERT INTO Problem1 (task, result, motivation) VALUES ('j', False, 'De capiciteit kan wel, maar de bestuurders niet');
