@@ -1,6 +1,10 @@
 SELECT DISTINCT p.name FROM Person p
-WHERE EXISTS(--person is a writer
+WHERE EXISTS(
 	SELECT * FROM Writes w
 	WHERE p.pid = w.pid
-	AND 'movie heeft geen regisseur'
+	AND EXISTS (
+		SELECT * FROM Movie m --movies geschreven door de persoon
+		WHERE 'geen regisseur'
+		
 	)
+);
