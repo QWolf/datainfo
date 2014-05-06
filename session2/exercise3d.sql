@@ -5,6 +5,9 @@ WHERE EXISTS(
 	FROM Writes w
 	WHERE p.pid = w.pid
 	AND NOT EXISTS(
-	'film met regisseur'
+		SELECT m.mid
+		FROM Movie m
+		WHERE m.mid = w.mid
+		AND film heeft regisseur'
 	)
 );
