@@ -1,3 +1,3 @@
-SELECT m.name, m.year FROM movie m
-WHERE m.rating >= 8.7
-AND m.rating <= 9.0;
+SELECT name, year FROM movie 
+WHERE rating >= 8.7
+AND rating <= 9.0;
