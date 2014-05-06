@@ -1,6 +1,6 @@
 SELECT DISTINCT p.name FROM Person p
 WHERE EXISTS(
-	SELECT * FROM Writes w
+	SELECT * FROM Writes w, Movie m
 	WHERE p.pid = w.pid
 	AND EXISTS (
 		SELECT * FROM Movie m
