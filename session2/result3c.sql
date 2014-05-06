@@ -3,8 +3,11 @@ WHERE EXISTS(
 	SELECT * FROM Writes w
 	WHERE p.pid = w.pid
 	AND EXISTS (
-		SELECT * FROM Movie m --movies geschreven door de persoon
-		WHERE 'geen regisseur'
-		
+		SELECT * FROM Movie m
+		WHERE m.mid = w.mid
+		AND NOT EXISTS ( --film heeft geen regisseur
+		SELECT d.pid FROM Directs d
+		WHERE d.mid = m.mid
+		)
 	)
 );
